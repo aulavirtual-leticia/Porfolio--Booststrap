@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
-
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <title>Porfolio</title>
 </head>
+
 <body>
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Leticia</a>
+      <a class="navbar-brand" href="#">LETICIA<span class="fw-bold">TORRES</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,6 +35,7 @@
     </div>
   </nav>
 </header>
+
 <main>
   <!-- Informacion personal -->
   <section class="container d-flex flex-column align-items-center mt-5 py-5">
@@ -47,52 +48,61 @@
       <div class="line"></div>
     </div>
     
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p>Maquetadora Web-Estudiante-Autodidacta</p>
   </section>
 
   <!-- Portafolio -->
   <section id="portafolio" class="bg-body-tertiary">
     <div class="container py-4">
       <h1 class="display-5 fw-bold text-center py-4">Portafolio</h1>
-
      <!-- Linea separadora -->
       <div class="d-flex gap-2 py-4 mb-4 justify-content-center">
         <div class="line"></div>
         <i class="fa-solid fa-star fa-lg"></i>
         <div class="line"></div>
       </div>
+      <div class="row row-gap-4">    
 
-      <div class="row row-gap-4">
+<!-- Card CV Lemon-->
+              <article class="col-12 col-sm-6 col-lg-4">
+                <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#lemonModal">
+                  <img src="./img/lemon-pie.jpeg" class="card-img-top" alt="lemon"> 
+<!-- Overlay con el símbolo "+" -->
+                   <div class="card-overlay">
+                   <span class="plus">+</span>
+                   </div>
 
-<!-- Card lemon Pie-->
-        <article class="col-12 col-sm-6 col-lg-4">
-          <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#lemonModal">
-            <img src="./img/lemon-pie.jpeg" class="card-img-top" alt="lemon">
-            <div class="card-body">
-              <h3 class="card-text text-center">Lemon pie</h3>
-            </div>
-          </div>
-         <!-- Modal -->
-         <div class="modal fade" id="lemonModal" tabindex="-1" aria-labelledby="lemonModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="lemonModalLabel">Proyecto lemon</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="card-body">
+                    <h3 class="card-text text-center">Lemon</h3>
+                  </div>
+                </div>
+                <!-- Modal -->
+            <div class="modal fade" id="lemonModal" tabindex="-1" aria-labelledby="lemonModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="batmanModalLabel">Proyecto LEMON PIE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Contenido LEMON
+                  </div>
+                </div>
               </div>
-              <div class="modal-body">
-                Contenido Lemon
-              </div>
             </div>
-          </div>
-        </div>
 
-        </article>
-
+              </article>
+        
+</article>
 <!-- Card CV Batman-->
               <article class="col-12 col-sm-6 col-lg-4">
                 <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#batmanModal">
-                  <img src="./img/CVBatman.png" class="card-img-top" alt="batman">
+                  <img src="./img/CVBatman.png" class="card-img-top" alt="batman"> 
+<!-- Overlay con el símbolo "+" -->
+                   <div class="card-overlay">
+                   <span class="plus">+</span>
+                   </div>
+
                   <div class="card-body">
                     <h3 class="card-text text-center">Batman</h3>
                   </div>
@@ -118,6 +128,12 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                       <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#superModal">
                         <img src="./img/super.png" class="card-img-top" alt="super">
+                       
+                        <!-- Overlay con el símbolo "+" -->
+                   <div class="card-overlay">
+                    <span class="plus">+</span>
+                    </div>
+
                         <div class="card-body">
                           <h3 class="card-text text-center">Super Heroes</h3>
                         </div>
@@ -141,6 +157,12 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                       <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#petshopModal">
                         <img src="./img/petshop.jpeg" class="card-img-top" alt="petshop">
+
+                        <!-- Overlay con el símbolo "+" -->
+                   <div class="card-overlay">
+                    <span class="plus">+</span>
+                    </div>
+
                         <div class="card-body">
                           <h3 class="card-text text-center">Pet Shop</h3>
                         </div>
@@ -164,6 +186,12 @@
                           <article class="col-12 col-sm-6 col-lg-4">
                             <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#pizaModal">
                               <img src="./img/piza.jpeg" class="card-img-top" alt="piza">
+
+                              <!-- Overlay con el símbolo "+" -->
+                   <div class="card-overlay">
+                    <span class="plus">+</span>
+                    </div>
+
                               <div class="card-body">
                                 <h3 class="card-text text-center">Pizzería</h3>
                               </div>
@@ -187,6 +215,12 @@
                                 <article class="col-12 col-sm-6 col-lg-4">
                                   <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#gameshopModal">
                                     <img src="./img/gameshop.jpeg" class="card-img-top" alt="gameshop">
+
+                                    <!-- Overlay con el símbolo "+" -->
+                   <div class="card-overlay">
+                    <span class="plus">+</span>
+                    </div>
+
                                     <div class="card-body">
                                       <h3 class="card-text text-center">Games Shop</h3>
                                     </div>
@@ -205,6 +239,54 @@
                                     </div>
                                   </div>
                                 </article>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="container py-4 text-center w-75">
+    <h1 class="display-6 fw-bold pt-4 mb-0">Sobre mí</h1>
+    <!-- Linea separadora -->
+    <div class="d-flex gap-2 py-4 mb-4 justify-content-center">
+      <div class="line"></div>
+      <i class="fa-solid fa-star fa-lg"></i>
+      <div class="line"></div>
+    </div>
+
+    <div class="row text-start mb-4">
+      <p class="col-12 col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quis saepe repellat, enim quasi praesentium voluptates, nostrum, at corporis fuga voluptatem? Voluptatum et fuga neque ullam quos doloribus dolores voluptatem?</p>
+      <p class="col-12 col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, odio explicabo. Odio explicabo omnis asperiores distinctio corrupti.</p>
+    </div>
+
+    <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-download pe-1"></i> Descargar CV</button>
+
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-body-tertiary">
+    <div class="container text-primary content-fix">
+      <h1 class="display-6 fw-bold text-center pt-4 mb-0">Contacto</h1>
+      <!-- Linea separadora -->
+      <div class="d-flex gap-2 py-4 mb-4 justify-content-center">
+        <div class="line"></div>
+        <i class="fa-solid fa-star fa-lg"></i>
+        <div class="line"></div>
+      </div>
+      <form class="container py-4">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>                               
 </main>
 <footer class="page-footer font-small bg-primary">
   <div class="container">

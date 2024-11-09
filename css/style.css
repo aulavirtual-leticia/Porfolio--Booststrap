@@ -107,3 +107,55 @@ bg-primary {
     }
   }
   
+
+  /*+*/
+
+  .card {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Overlay para el efecto hover */
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .plus {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .card-text {
+    color: #8c8c8c;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Mostrar el overlay solo cuando se hace hover en la tarjeta */
+  .card:hover .card-overlay {
+    opacity: 1;
+  }
+  
+  /* Hacer que la imagen se oscurezca en el hover */
+  .card:hover .card-img-top {
+    opacity: 0.3;
+  }
+  
