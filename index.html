@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">LETICIA<span class="fw-bold">TORRES</span></a>
+      <a class="navbar-brand" href="#">LETICIA <span class="fw-bold">TORRES</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -97,7 +97,7 @@
 <!-- Card CV Batman-->
               <article class="col-12 col-sm-6 col-lg-4">
                 <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#batmanModal">
-                  <img src="./img/CVBatman.png" class="card-img-top" alt="batman"> 
+                  <img src="./img/CVBatman.png" class="card-img-top bg-white" alt="batman"> 
 <!-- Overlay con el símbolo "+" -->
                    <div class="card-overlay">
                    <span class="plus">+</span>
@@ -127,7 +127,7 @@
 <!-- Card Super Heroes-->
                     <article class="col-12 col-sm-6 col-lg-4">
                       <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#superModal">
-                        <img src="./img/super.png" class="card-img-top" alt="super">
+                        <img src="./img/super.png" class="card-img-top bg-white" alt="super">
                        
                         <!-- Overlay con el símbolo "+" -->
                    <div class="card-overlay">
@@ -239,6 +239,10 @@
                                     </div>
                                   </div>
                                 </article>
+                              </div>
+                            </div>
+                          </section>
+                            
 
   <!-- Sobre mi -->
   <section id="sobre-mi" class="container py-4 text-center w-75">
@@ -269,21 +273,23 @@
         <i class="fa-solid fa-star fa-lg"></i>
         <div class="line"></div>
       </div>
+
       <form class="container py-4">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <label for="exampleInputEmail1" class="form-label">Ingrese su correo</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" class="form-text">Su correo no será compartido.</div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label class="form-check-label" for="exampleCheck1">Confirma</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </div>
   </section>                               
