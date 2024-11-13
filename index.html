@@ -64,7 +64,7 @@
       <div class="row row-gap-4">    
 
 <!-- Card CV Lemon-->
-              <article class="col-12 col-sm-6 col-lg-4">
+    <article class="col-12 col-sm-6 col-lg-4">
                 <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#lemonModal">
                   <img src="./img/lemon-pie.jpeg" class="card-img-top" alt="lemon"> 
 <!-- Overlay con el símbolo "+" -->
@@ -91,7 +91,7 @@
               </div>
             </div>
 
-              </article>
+  </article>
         
 </article>
 <!-- Card CV Batman-->
@@ -156,7 +156,7 @@
 <!-- Card Pet Shop-->
                     <article class="col-12 col-sm-6 col-lg-4">
                       <div class="card" type="button" data-bs-toggle="modal"data-bs-target="#petshopModal">
-                        <img src="./img/petshop.jpeg" class="card-img-top" alt="petshop">
+                        <img src="./img/petshop.jpeg" class="card-img-top bg-white" alt="petshop">
 
                         <!-- Overlay con el símbolo "+" -->
                    <div class="card-overlay">
@@ -294,44 +294,53 @@
     </div>
   </section>                               
 </main>
-<footer class="page-footer font-small bg-primary">
+<footer class="page-footer font-small text-white bg-primary text-white">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 py-5">
-        <div class="my-5 d-flex justify-content-center align-items-center">
+    <div class="row py-5 text-center">
+      <!-- Primera columna -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase">MI LUGAR</h5>
+        <p>Misiones N 450        
+          Macachín, La Pampa CP 6307
+        </p>  
+      </div>
+      <!-- Segunda columna -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase">SIGAMOS CONECTADOS</h5>
+        <div class="d-flex justify-content-center align-items-center">
           <!-- Facebook -->
-          <a href="https://www.facebook.com/informaticaleticia" target="_blank">
-            <i class="fab fa-facebook-f fa-lg me-sm-5 me-3 fa-2x"> </i>
+          <a href="https://www.facebook.com/informaticaleticia" target="_blank" class="text-white me-3">
+            <i class="fab fa-facebook-f fa-lg"></i>
           </a>
-          <!-- Twitter -->
-          <a href="" target="_blank">
-            <i class="fab fa-twitter fa-lg me-sm-5 me-3"> </i>
+          <!-- Github -->
+          <a href="https://github.com/aulavirtual-leticia" target="_blank" class="text-white me-3">
+            <i class="fab fa-github fa-lg"></i>
           </a>
-          <!-- Github-->
-          <a href="https://github.com/aulavirtual-leticia" target="_blank">
-            <i class="fab fa-github fa-lg me-sm-5 me-3"> </i>
+          <!-- Linkedin -->
+          <a href="" target="_blank" class="text-white me-3">
+            <i class="fab fa-linkedin-in fa-lg"></i>
           </a>
-          <!--Linkedin -->
-          <a href="" target="_blank">
-            <i class="fab fa-linkedin-in fa-lg me-sm-5 me-3"> </i>
-          </a>
-          <!--Instagram-->
-          <a href="https://www.instagram.com/informaticaleticia/" target="_blank">
-            <i class="fab fa-instagram fa-lg me-sm-5 me-3"> </i>
-          </a>
-          <!--Youtube-->
-          <a href="" target="_blank">
-            <i class="fab fa-youtube fa-lg"> </i>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/informaticaleticia/" target="_blank" class="text-white me-3">
+            <i class="fab fa-instagram fa-lg"></i>
           </a>
         </div>
       </div>
+ <!-- Tercera columna -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase">SOBRE MÍ</h5>
+        <P>Soy una persona creativa y con ansias de aprender. Tengo conocimientos de HTML, CSS y Booststrap</P>
+      </div>
     </div>
   </div>
+
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 bg-secondary text-white"><span class="text-secondary">Copyright ©</span>
-    <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</a>
+  <div class="text-center py-3 bg-secondary text-white">
+    <span class="text-secondary">Copyright ©</span>
+    <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.
   </div>
 </footer>
+
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

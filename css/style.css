@@ -1,161 +1,162 @@
 bg-primary {
-    background-color: #00838f !important;
-  }
-  
-  .bg-secondary {
-    background-color: #006972 !important;
-  }
-  
-  .text-primary {
-    color: #00838f !important;
-  }
-  
-  .text-secondary {
-    color: #96bab3 !important;
-  }
-  
-  .btn-outline-primary {
-    border-color: #00838f !important;
-    color: #00838f !important;
-  }
-  
-  .btn-outline-primary:hover {
-    background-color: #00838f !important;
-    color: #e0dfdf !important;
-  }
-  
-  .btn-primary {
-    background-color: #00838f !important;
-    border-color: #002629 !important;
-  }
-  
-  .btn-primary:hover,
-  .btn-primary:focus {
-    background-color: #00545c !important;
-  }
-  
-  .btn-primary:active {
-    background-color: #002629 !important;
-    border-color: black !important;
-  }
-  
-  .btn-primary:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 131, 143, 0.5) !important;
-    box-shadow: 0 0 0 0.2rem rgba(0, 131, 143, 0.5) !important;
-  }
-  
-  footer a {
-    color: white !important;
-  }
-  
-  footer a:hover {
-    color: #e0dfdf !important;
-  }
-  
-  /*--------------------------
+  background-color: #00838f !important;
+}
+
+.bg-secondary {
+  background-color: #006972 !important;
+}
+
+.text-primary {
+  color: #00838f !important;
+}
+
+.text-secondary {
+  color: #96bab3 !important;
+}
+
+.btn-outline-primary {
+  border-color: #00838f !important;
+  color: #00838f !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00838f !important;
+  color: #e0dfdf !important;
+}
+
+.btn-primary {
+  background-color: #00838f !important;
+  border-color: #002629 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #00545c !important;
+}
+
+.btn-primary:active {
+  background-color: #002629 !important;
+  border-color: black !important;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 131, 143, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 131, 143, 0.5) !important;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer a:hover {
+  color: #e0dfdf !important;
+}
+
+footer h5 {
+  font-weight: bold !important;
+}
+/*--------------------------
   ESTILOS DEL DISEÑO
   ---------------------------*/
-  .card {
-    transition: all 300ms ease;
-  }
-  
-  .card:hover {
-    -webkit-box-shadow: 0 0 10px #0c0c0c3b;
-    box-shadow: 0 0 10px #0c0c0c3b;
-    transform: scale(1.05); /* Escalar un poco la tarjeta */
-  }
-  
-  /* Capa de oscurecimiento */
-  .card:hover .card-img-top {
-    opacity: 0.3; /* Hace que la imagen se oscurezca */
-  }
-  
-  .line {
-    background-color: #e0dfdf;
-    height: 2px;
-    width: 100px;
-  }
-  
-  .plus {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    opacity: 0; /* Oculto por defecto */
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Mostrar el icono solo cuando el ratón pasa sobre la tarjeta */
-  .card:hover .plus {
-    opacity: 1;
-  }
-  
+.card {
+  transition: all 300ms ease;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+  box-shadow: 0 0 10px #0c0c0c3b;
+  transform: scale(1.05); /* Escalar un poco la tarjeta */
+}
+
+/* Capa de oscurecimiento */
+.card:hover .card-img-top {
+  opacity: 0.3; /* Hace que la imagen se oscurezca */
+}
+
+.line {
+  background-color: #e0dfdf;
+  height: 2px;
+  width: 100px;
+}
+
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar el icono solo cuando el ratón pasa sobre la tarjeta */
+.card:hover .plus {
+  opacity: 1;
+}
+
+body {
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
-  
-  @media (min-width: 576px) {
-    body {
-      font-size: 16px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .content-fix {
-      max-width: 50%;
-    }
-  }
-  
+}
 
-  /*+*/
+@media (min-width: 768px) {
+  .content-fix {
+    max-width: 50%;
+  }
+}
 
-  .card {
-    position: relative;
-    transition: all 0.3s ease;
-  }
-  
-  .card-img-top {
-    width: 100%;
-    border-radius: 8px;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Overlay para el efecto hover */
-  .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 8px;
-  }
-  
-  .plus {
-    font-size: 2rem;
-    color: #ffffff;
-  }
-  
-  .card-text {
-    color: #8c8c8c;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  /* Mostrar el overlay solo cuando se hace hover en la tarjeta */
-  .card:hover .card-overlay {
-    opacity: 1;
-  }
-  
-  /* Hacer que la imagen se oscurezca en el hover */
-  .card:hover .card-img-top {
-    opacity: 0.3;
-  }
-  
+/*+*/
+
+.card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay para el efecto hover */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.plus {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.card-text {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Mostrar el overlay solo cuando se hace hover en la tarjeta */
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Hacer que la imagen se oscurezca en el hover */
+.card:hover .card-img-top {
+  opacity: 0.3;
+}
