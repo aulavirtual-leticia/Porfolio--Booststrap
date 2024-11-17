@@ -1,4 +1,5 @@
-bg-primary {
+/* Colores principales y secundarios */
+.bg-primary {
   background-color: #00838f !important;
 }
 
@@ -14,6 +15,7 @@ bg-primary {
   color: #96bab3 !important;
 }
 
+/* Estilos de botones */
 .btn-outline-primary {
   border-color: #00838f !important;
   color: #00838f !important;
@@ -44,6 +46,7 @@ bg-primary {
   box-shadow: 0 0 0 0.2rem rgba(0, 131, 143, 0.5) !important;
 }
 
+/* Estilos de enlaces en el footer */
 footer a {
   color: white !important;
 }
@@ -55,22 +58,61 @@ footer a:hover {
 footer h5 {
   font-weight: bold !important;
 }
-/*--------------------------
-  ESTILOS DEL DISEÑO
-  ---------------------------*/
+
+/* Estilos de las tarjetas */
 .card {
+  position: relative;
   transition: all 300ms ease;
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
-  box-shadow: 0 0 10px #0c0c0c3b;
-  transform: scale(1.05); /* Escalar un poco la tarjeta */
+  -webkit-box-shadow: 0 0 10px rgba(12, 12, 12, 0.23);
+  box-shadow: 0 0 10px rgba(12, 12, 12, 0.23);
+  transform: scale(1.05);
 }
 
-/* Capa de oscurecimiento */
+.card-img-top {
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
 .card:hover .card-img-top {
-  opacity: 0.3; /* Hace que la imagen se oscurezca */
+  opacity: 0.3;
+}
+
+/* Overlay para efecto hover */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.plus {
+  font-size: 2rem;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .plus {
+  opacity: 1;
+}
+
+.card-text {
+  color: #8c8c8c;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .line {
@@ -79,21 +121,7 @@ footer h5 {
   width: 100px;
 }
 
-.plus {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  opacity: 0; /* Oculto por defecto */
-  transition: opacity 0.3s ease;
-}
-
-/* Mostrar el icono solo cuando el ratón pasa sobre la tarjeta */
-.card:hover .plus {
-  opacity: 1;
-}
-
+/* Ajustes de fuentes y espaciado para dispositivos pequeños */
 body {
   font-size: 14px;
 }
@@ -110,53 +138,27 @@ body {
   }
 }
 
-/*+*/
-
-.card {
-  position: relative;
-  transition: all 0.3s ease;
+/* Ajustes responsivos para la tarjeta */
+@media (max-width: 576px) {
+  .card {
+    transform: scale(1); /* Eliminar el escalado en dispositivos pequeños */
+    margin-bottom: 15px;
+  }
+  
+  .card-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Más oscuro para mayor contraste en pantallas pequeñas */
+  }
 }
 
-.card-img-top {
-  width: 100%;
-  border-radius: 8px;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+@media (min-width: 768px) and (max-width: 992px) {
+  .card {
+    max-width: 80%; /* Limitar el ancho en pantallas medianas */
+    margin: auto;
+  }
 }
 
-/* Overlay para el efecto hover */
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 8px;
-}
-
-.plus {
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.card-text {
-  color: #8c8c8c;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-/* Mostrar el overlay solo cuando se hace hover en la tarjeta */
-.card:hover .card-overlay {
-  opacity: 1;
-}
-
-/* Hacer que la imagen se oscurezca en el hover */
-.card:hover .card-img-top {
-  opacity: 0.3;
+@media (min-width: 992px) {
+  .card {
+    max-width: 60%; /* Limitar el ancho en pantallas grandes */
+  }
 }
